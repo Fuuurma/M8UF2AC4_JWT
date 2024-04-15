@@ -1,0 +1,45 @@
+<%- include('partials/layout.ejs'); %>
+<div class="container">
+<div class="row justify-content-center">
+                    <div class="col-md-8 mt-4">
+                        <h2>REGISTER PRODUCT</h2>
+                        <div class="card">
+                            <div class="card-body">
+
+                                <form class="form-horizontal" method="post" action="/api/products">
+
+                                    <div class="form-group">
+                                        <label for="name" class="cols-sm-2 control-label">Name</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="price" class="cols-sm-2 control-label">Price</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" name="price" id="email" placeholder="Enter your Email" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group ">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Register product</button>
+                                    </div>
+                                    <!-- <div class="login-register">
+                                        <a href="/login">Login</a>
+                                    </div> -->
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</div>
+
+</body>
+</html>

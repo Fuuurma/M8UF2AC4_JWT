@@ -1,0 +1,36 @@
+<%- include('partials/layout.ejs'); %>
+    <div class="container">
+        <div class=" row justify-content-center">
+        <div class="col-md-8 mt-4">
+            <h2>LIST PRODUCTS</h2>
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price (euro)</th>
+                            <th></th>
+                        </tr>
+                        <% for(var i=0; i < products.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= products[i].name %>
+                                </td>
+                                <td>
+                                    <%= products[i].price %>
+                                </td>
+                                <td>
+                                    <button type="button" class="delete btn btn-danger" id="<%= products[i].name %>">x</button>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    <script src="script.js"></script>
+
+    </html>
